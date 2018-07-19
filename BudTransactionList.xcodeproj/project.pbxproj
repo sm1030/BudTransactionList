@@ -26,6 +26,15 @@
 		512852532101067100B032C7 /* GET_v2_5b33bdb43200008f0ad1e256 in Resources */ = {isa = PBXBuildFile; fileRef = 5128524E210105C700B032C7 /* GET_v2_5b33bdb43200008f0ad1e256 */; };
 		512852542101067200B032C7 /* GET_budcraftstorage_uploads_products_lloyds-bank_Llyods_Favicon-1_161201_091641.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 512852502101061F00B032C7 /* GET_budcraftstorage_uploads_products_lloyds-bank_Llyods_Favicon-1_161201_091641.jpg */; };
 		512852552101067200B032C7 /* GET_v2_5b33bdb43200008f0ad1e256 in Resources */ = {isa = PBXBuildFile; fileRef = 5128524E210105C700B032C7 /* GET_v2_5b33bdb43200008f0ad1e256 */; };
+		51285258210113DA00B032C7 /* BudAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51285257210113DA00B032C7 /* BudAPI.swift */; };
+		5128525C21011AAE00B032C7 /* BudAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128525B21011AAE00B032C7 /* BudAPITests.swift */; };
+		5128525F21011E1500B032C7 /* BudAPITransactionListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128525E21011E1500B032C7 /* BudAPITransactionListResponse.swift */; };
+		5128526121011F4700B032C7 /* BudAPITransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128526021011F4700B032C7 /* BudAPITransaction.swift */; };
+		51285263210120D500B032C7 /* BudAPITransactionAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51285262210120D500B032C7 /* BudAPITransactionAmount.swift */; };
+		512852652101214300B032C7 /* BudAPITransactionProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512852642101214300B032C7 /* BudAPITransactionProduct.swift */; };
+		51285268210123C200B032C7 /* String+BudAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51285267210123C200B032C7 /* String+BudAPI.swift */; };
+		5128526B2101247900B032C7 /* String+BudAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128526A2101247900B032C7 /* String+BudAPITests.swift */; };
+		5128526E21012A2900B032C7 /* BudTransactionListResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128526D21012A2900B032C7 /* BudTransactionListResponseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +76,15 @@
 		5128524B2101024700B032C7 /* MockableURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockableURLSessionTests.swift; sourceTree = "<group>"; };
 		5128524E210105C700B032C7 /* GET_v2_5b33bdb43200008f0ad1e256 */ = {isa = PBXFileReference; lastKnownFileType = text; path = GET_v2_5b33bdb43200008f0ad1e256; sourceTree = "<group>"; };
 		512852502101061F00B032C7 /* GET_budcraftstorage_uploads_products_lloyds-bank_Llyods_Favicon-1_161201_091641.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GET_budcraftstorage_uploads_products_lloyds-bank_Llyods_Favicon-1_161201_091641.jpg"; sourceTree = "<group>"; };
+		51285257210113DA00B032C7 /* BudAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudAPI.swift; sourceTree = "<group>"; };
+		5128525B21011AAE00B032C7 /* BudAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudAPITests.swift; sourceTree = "<group>"; };
+		5128525E21011E1500B032C7 /* BudAPITransactionListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudAPITransactionListResponse.swift; sourceTree = "<group>"; };
+		5128526021011F4700B032C7 /* BudAPITransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudAPITransaction.swift; sourceTree = "<group>"; };
+		51285262210120D500B032C7 /* BudAPITransactionAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudAPITransactionAmount.swift; sourceTree = "<group>"; };
+		512852642101214300B032C7 /* BudAPITransactionProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudAPITransactionProduct.swift; sourceTree = "<group>"; };
+		51285267210123C200B032C7 /* String+BudAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BudAPI.swift"; sourceTree = "<group>"; };
+		5128526A2101247900B032C7 /* String+BudAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BudAPITests.swift"; sourceTree = "<group>"; };
+		5128526D21012A2900B032C7 /* BudTransactionListResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudTransactionListResponseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +211,9 @@
 		5128523E2100EB2400B032C7 /* BudAPI */ = {
 			isa = PBXGroup;
 			children = (
+				512852662101239D00B032C7 /* Extensions */,
+				51285256210113B800B032C7 /* Main */,
+				5128525D21011DD900B032C7 /* Models */,
 			);
 			path = BudAPI;
 			sourceTree = "<group>";
@@ -200,6 +221,7 @@
 		512852452101003E00B032C7 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				5128525921011A6C00B032C7 /* BudAPI */,
 				5128524D210105AD00B032C7 /* MockUpData */,
 				512852462101007E00B032C7 /* MocableURLSession */,
 			);
@@ -223,6 +245,67 @@
 				5128524E210105C700B032C7 /* GET_v2_5b33bdb43200008f0ad1e256 */,
 			);
 			path = MockUpData;
+			sourceTree = "<group>";
+		};
+		51285256210113B800B032C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				51285257210113DA00B032C7 /* BudAPI.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5128525921011A6C00B032C7 /* BudAPI */ = {
+			isa = PBXGroup;
+			children = (
+				512852692101242800B032C7 /* Extensions */,
+				5128525A21011A7500B032C7 /* Main */,
+				5128526C2101297900B032C7 /* Models */,
+			);
+			path = BudAPI;
+			sourceTree = "<group>";
+		};
+		5128525A21011A7500B032C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5128525B21011AAE00B032C7 /* BudAPITests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5128525D21011DD900B032C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5128526021011F4700B032C7 /* BudAPITransaction.swift */,
+				51285262210120D500B032C7 /* BudAPITransactionAmount.swift */,
+				5128525E21011E1500B032C7 /* BudAPITransactionListResponse.swift */,
+				512852642101214300B032C7 /* BudAPITransactionProduct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		512852662101239D00B032C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				51285267210123C200B032C7 /* String+BudAPI.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		512852692101242800B032C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5128526A2101247900B032C7 /* String+BudAPITests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5128526C2101297900B032C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5128526D21012A2900B032C7 /* BudTransactionListResponseTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,8 +447,14 @@
 			files = (
 				5128520E21006E6700B032C7 /* ViewController.swift in Sources */,
 				512852402100F7E100B032C7 /* MocableURLSession.swift in Sources */,
+				51285268210123C200B032C7 /* String+BudAPI.swift in Sources */,
 				512852442100F83000B032C7 /* URLMockable.swift in Sources */,
+				512852652101214300B032C7 /* BudAPITransactionProduct.swift in Sources */,
+				5128525F21011E1500B032C7 /* BudAPITransactionListResponse.swift in Sources */,
 				512852422100F80600B032C7 /* MockableURLSessionDataTask.swift in Sources */,
+				51285263210120D500B032C7 /* BudAPITransactionAmount.swift in Sources */,
+				5128526121011F4700B032C7 /* BudAPITransaction.swift in Sources */,
+				51285258210113DA00B032C7 /* BudAPI.swift in Sources */,
 				5128520C21006E6700B032C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,8 +465,11 @@
 			files = (
 				5128524C2101024700B032C7 /* MockableURLSessionTests.swift in Sources */,
 				5128522121006E6900B032C7 /* BudTransactionListTests.swift in Sources */,
+				5128526E21012A2900B032C7 /* BudTransactionListResponseTests.swift in Sources */,
 				5128524A2101021000B032C7 /* MockableURLSessionDataTaskTests.swift in Sources */,
 				512852482101011A00B032C7 /* URLMockableTests.swift in Sources */,
+				5128525C21011AAE00B032C7 /* BudAPITests.swift in Sources */,
+				5128526B2101247900B032C7 /* String+BudAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
