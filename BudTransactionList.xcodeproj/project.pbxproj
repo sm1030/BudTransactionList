@@ -35,6 +35,9 @@
 		51285268210123C200B032C7 /* String+BudAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51285267210123C200B032C7 /* String+BudAPI.swift */; };
 		5128526B2101247900B032C7 /* String+BudAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128526A2101247900B032C7 /* String+BudAPITests.swift */; };
 		5128526E21012A2900B032C7 /* BudTransactionListResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128526D21012A2900B032C7 /* BudTransactionListResponseTests.swift */; };
+		512852712101340400B032C7 /* CacheAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512852702101340400B032C7 /* CacheAPI.swift */; };
+		512852732101346F00B032C7 /* CacheAPIImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512852722101346F00B032C7 /* CacheAPIImageResponse.swift */; };
+		512852762101358600B032C7 /* CacheAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512852752101358600B032C7 /* CacheAPITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		51285267210123C200B032C7 /* String+BudAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BudAPI.swift"; sourceTree = "<group>"; };
 		5128526A2101247900B032C7 /* String+BudAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BudAPITests.swift"; sourceTree = "<group>"; };
 		5128526D21012A2900B032C7 /* BudTransactionListResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudTransactionListResponseTests.swift; sourceTree = "<group>"; };
+		512852702101340400B032C7 /* CacheAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAPI.swift; sourceTree = "<group>"; };
+		512852722101346F00B032C7 /* CacheAPIImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAPIImageResponse.swift; sourceTree = "<group>"; };
+		512852752101358600B032C7 /* CacheAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAPITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				5128523E2100EB2400B032C7 /* BudAPI */,
+				5128526F210133CA00B032C7 /* CacheAPI */,
 				5128523D2100EB0900B032C7 /* MocableURLSession */,
 			);
 			path = DataLayer;
@@ -222,8 +229,9 @@
 			isa = PBXGroup;
 			children = (
 				5128525921011A6C00B032C7 /* BudAPI */,
-				5128524D210105AD00B032C7 /* MockUpData */,
+				512852742101356C00B032C7 /* CacheAPI */,
 				512852462101007E00B032C7 /* MocableURLSession */,
+				5128524D210105AD00B032C7 /* MockUpData */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -306,6 +314,23 @@
 				5128526D21012A2900B032C7 /* BudTransactionListResponseTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5128526F210133CA00B032C7 /* CacheAPI */ = {
+			isa = PBXGroup;
+			children = (
+				512852702101340400B032C7 /* CacheAPI.swift */,
+				512852722101346F00B032C7 /* CacheAPIImageResponse.swift */,
+			);
+			path = CacheAPI;
+			sourceTree = "<group>";
+		};
+		512852742101356C00B032C7 /* CacheAPI */ = {
+			isa = PBXGroup;
+			children = (
+				512852752101358600B032C7 /* CacheAPITests.swift */,
+			);
+			path = CacheAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +474,7 @@
 				512852402100F7E100B032C7 /* MocableURLSession.swift in Sources */,
 				51285268210123C200B032C7 /* String+BudAPI.swift in Sources */,
 				512852442100F83000B032C7 /* URLMockable.swift in Sources */,
+				512852732101346F00B032C7 /* CacheAPIImageResponse.swift in Sources */,
 				512852652101214300B032C7 /* BudAPITransactionProduct.swift in Sources */,
 				5128525F21011E1500B032C7 /* BudAPITransactionListResponse.swift in Sources */,
 				512852422100F80600B032C7 /* MockableURLSessionDataTask.swift in Sources */,
@@ -456,6 +482,7 @@
 				5128526121011F4700B032C7 /* BudAPITransaction.swift in Sources */,
 				51285258210113DA00B032C7 /* BudAPI.swift in Sources */,
 				5128520C21006E6700B032C7 /* AppDelegate.swift in Sources */,
+				512852712101340400B032C7 /* CacheAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +497,7 @@
 				512852482101011A00B032C7 /* URLMockableTests.swift in Sources */,
 				5128525C21011AAE00B032C7 /* BudAPITests.swift in Sources */,
 				5128526B2101247900B032C7 /* String+BudAPITests.swift in Sources */,
+				512852762101358600B032C7 /* CacheAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
