@@ -97,12 +97,10 @@
 		5128520A21006E6700B032C7 /* BudTransactionList */ = {
 			isa = PBXGroup;
 			children = (
-				5128520B21006E6700B032C7 /* AppDelegate.swift */,
-				5128520D21006E6700B032C7 /* ViewController.swift */,
-				5128520F21006E6700B032C7 /* Main.storyboard */,
-				5128521221006E6900B032C7 /* Assets.xcassets */,
-				5128521421006E6900B032C7 /* LaunchScreen.storyboard */,
-				5128521721006E6900B032C7 /* Info.plist */,
+				5128523C21006FD100B032C7 /* Main */,
+				5128523B21006FBD00B032C7 /* BusinessLayer */,
+				5128523A21006FB400B032C7 /* UILayer */,
+				5128523921006FA500B032C7 /* DataLayer */,
 			);
 			path = BudTransactionList;
 			sourceTree = "<group>";
@@ -123,6 +121,40 @@
 				5128522D21006E6A00B032C7 /* Info.plist */,
 			);
 			path = BudTransactionListUITests;
+			sourceTree = "<group>";
+		};
+		5128523921006FA500B032C7 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		5128523A21006FB400B032C7 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				5128521421006E6900B032C7 /* LaunchScreen.storyboard */,
+				5128520F21006E6700B032C7 /* Main.storyboard */,
+				5128520D21006E6700B032C7 /* ViewController.swift */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		5128523B21006FBD00B032C7 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		5128523C21006FD100B032C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5128521721006E6900B032C7 /* Info.plist */,
+				5128521221006E6900B032C7 /* Assets.xcassets */,
+				5128520B21006E6700B032C7 /* AppDelegate.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2UFGA4H52;
-				INFOPLIST_FILE = BudTransactionList/Info.plist;
+				INFOPLIST_FILE = BudTransactionList/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2UFGA4H52;
-				INFOPLIST_FILE = BudTransactionList/Info.plist;
+				INFOPLIST_FILE = BudTransactionList/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
