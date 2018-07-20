@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5128520C21006E6700B032C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128520B21006E6700B032C7 /* AppDelegate.swift */; };
-		5128520E21006E6700B032C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128520D21006E6700B032C7 /* ViewController.swift */; };
+		5128520E21006E6700B032C7 /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128520D21006E6700B032C7 /* TransactionListViewController.swift */; };
 		5128521121006E6700B032C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5128520F21006E6700B032C7 /* Main.storyboard */; };
 		5128521321006E6900B032C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5128521221006E6900B032C7 /* Assets.xcassets */; };
 		5128521621006E6900B032C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5128521421006E6900B032C7 /* LaunchScreen.storyboard */; };
@@ -38,6 +38,10 @@
 		512852712101340400B032C7 /* CacheAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512852702101340400B032C7 /* CacheAPI.swift */; };
 		512852732101346F00B032C7 /* CacheAPIImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512852722101346F00B032C7 /* CacheAPIImageResponse.swift */; };
 		512852762101358600B032C7 /* CacheAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512852752101358600B032C7 /* CacheAPITests.swift */; };
+		5128527B21013BED00B032C7 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128527A21013BED00B032C7 /* TransactionCell.swift */; };
+		51AF6B362101500700507B2C /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF6B352101500700507B2C /* TransactionManager.swift */; };
+		51AF6B382101665700507B2C /* Date+BudAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF6B372101665700507B2C /* Date+BudAPI.swift */; };
+		51AF6B3A21016AA000507B2C /* Date+BudAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF6B3921016AA000507B2C /* Date+BudAPITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +64,7 @@
 /* Begin PBXFileReference section */
 		5128520821006E6700B032C7 /* BudTransactionList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudTransactionList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5128520B21006E6700B032C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5128520D21006E6700B032C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5128520D21006E6700B032C7 /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
 		5128521021006E6700B032C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5128521221006E6900B032C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5128521521006E6900B032C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +95,10 @@
 		512852702101340400B032C7 /* CacheAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAPI.swift; sourceTree = "<group>"; };
 		512852722101346F00B032C7 /* CacheAPIImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAPIImageResponse.swift; sourceTree = "<group>"; };
 		512852752101358600B032C7 /* CacheAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAPITests.swift; sourceTree = "<group>"; };
+		5128527A21013BED00B032C7 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		51AF6B352101500700507B2C /* TransactionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionManager.swift; sourceTree = "<group>"; };
+		51AF6B372101665700507B2C /* Date+BudAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+BudAPI.swift"; sourceTree = "<group>"; };
+		51AF6B3921016AA000507B2C /* Date+BudAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+BudAPITests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,9 +189,9 @@
 		5128523A21006FB400B032C7 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
-				5128521421006E6900B032C7 /* LaunchScreen.storyboard */,
-				5128520F21006E6700B032C7 /* Main.storyboard */,
-				5128520D21006E6700B032C7 /* ViewController.swift */,
+				5128527821013A5400B032C7 /* Storyboards */,
+				5128527921013A6400B032C7 /* TableViewCells */,
+				5128527721013A3B00B032C7 /* ViewControllers */,
 			);
 			path = UILayer;
 			sourceTree = "<group>";
@@ -191,6 +199,7 @@
 		5128523B21006FBD00B032C7 /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				51AF6B352101500700507B2C /* TransactionManager.swift */,
 			);
 			path = BusinessLayer;
 			sourceTree = "<group>";
@@ -296,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				51285267210123C200B032C7 /* String+BudAPI.swift */,
+				51AF6B372101665700507B2C /* Date+BudAPI.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -304,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				5128526A2101247900B032C7 /* String+BudAPITests.swift */,
+				51AF6B3921016AA000507B2C /* Date+BudAPITests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,6 +342,31 @@
 				512852752101358600B032C7 /* CacheAPITests.swift */,
 			);
 			path = CacheAPI;
+			sourceTree = "<group>";
+		};
+		5128527721013A3B00B032C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5128527A21013BED00B032C7 /* TransactionCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5128527821013A5400B032C7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5128520F21006E6700B032C7 /* Main.storyboard */,
+				5128521421006E6900B032C7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5128527921013A6400B032C7 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5128520D21006E6700B032C7 /* TransactionListViewController.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,7 +506,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5128520E21006E6700B032C7 /* ViewController.swift in Sources */,
+				5128527B21013BED00B032C7 /* TransactionCell.swift in Sources */,
+				5128520E21006E6700B032C7 /* TransactionListViewController.swift in Sources */,
 				512852402100F7E100B032C7 /* MocableURLSession.swift in Sources */,
 				51285268210123C200B032C7 /* String+BudAPI.swift in Sources */,
 				512852442100F83000B032C7 /* URLMockable.swift in Sources */,
@@ -479,10 +516,12 @@
 				5128525F21011E1500B032C7 /* BudAPITransactionListResponse.swift in Sources */,
 				512852422100F80600B032C7 /* MockableURLSessionDataTask.swift in Sources */,
 				51285263210120D500B032C7 /* BudAPITransactionAmount.swift in Sources */,
+				51AF6B382101665700507B2C /* Date+BudAPI.swift in Sources */,
 				5128526121011F4700B032C7 /* BudAPITransaction.swift in Sources */,
 				51285258210113DA00B032C7 /* BudAPI.swift in Sources */,
 				5128520C21006E6700B032C7 /* AppDelegate.swift in Sources */,
 				512852712101340400B032C7 /* CacheAPI.swift in Sources */,
+				51AF6B362101500700507B2C /* TransactionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +532,7 @@
 				5128524C2101024700B032C7 /* MockableURLSessionTests.swift in Sources */,
 				5128522121006E6900B032C7 /* BudTransactionListTests.swift in Sources */,
 				5128526E21012A2900B032C7 /* BudTransactionListResponseTests.swift in Sources */,
+				51AF6B3A21016AA000507B2C /* Date+BudAPITests.swift in Sources */,
 				5128524A2101021000B032C7 /* MockableURLSessionDataTaskTests.swift in Sources */,
 				512852482101011A00B032C7 /* URLMockableTests.swift in Sources */,
 				5128525C21011AAE00B032C7 /* BudAPITests.swift in Sources */,

@@ -28,9 +28,33 @@ class BudTransactionListUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    /**
+     Since there is not much we can do in this app, except watch the transaction list, I will click on first two cells text lables just to make sure they are present.
+     */
+    func testTransactionList() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        
+        let tablesQuery = XCUIApplication().tables
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Forbidden planet"]/*[[".cells.staticTexts[\"Forbidden planet\"]",".staticTexts[\"Forbidden planet\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        let forbiddenPlanetCellsQuery = tablesQuery.cells.containing(.staticText, identifier:"Forbidden planet")
+        forbiddenPlanetCellsQuery.staticTexts["2018-03-19"].tap()
+        forbiddenPlanetCellsQuery.staticTexts["13.00 GBP"].tap()
+        forbiddenPlanetCellsQuery.staticTexts["Product title:"].tap()
+        forbiddenPlanetCellsQuery.staticTexts["Lloyds Bank"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Yamaha music london"]/*[[".cells.staticTexts[\"Yamaha music london\"]",".staticTexts[\"Yamaha music london\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        let yamahaMusicLondonCellsQuery = tablesQuery/*@START_MENU_TOKEN@*/.cells.containing(.staticText, identifier:"Yamaha music london")/*[[".cells.containing(.staticText, identifier:\"14.99 GBP\")",".cells.containing(.staticText, identifier:\"Yamaha music london\")"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        yamahaMusicLondonCellsQuery.staticTexts["Date:"].tap()
+        yamahaMusicLondonCellsQuery.staticTexts["2018-03-19"].tap()
+        yamahaMusicLondonCellsQuery.staticTexts["Category:"].tap()
+        yamahaMusicLondonCellsQuery.staticTexts["Amount:"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["14.99 GBP"]/*[[".cells.staticTexts[\"14.99 GBP\"]",".staticTexts[\"14.99 GBP\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        yamahaMusicLondonCellsQuery.staticTexts["Product title:"].tap()
+        yamahaMusicLondonCellsQuery.staticTexts["Lloyds Bank"].tap()
+        
     }
     
 }
